@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/BodyCss.css">
+    <link rel="stylesheet" href="./css/SongtextCss.css">
+    <link rel="stylesheet" href="./css/PlayerCss.css">
+    <link rel="stylesheet" href="./css/LastsongCss.css">
+    <link rel="stylesheet" href="./css/NextsongCss.css">
+</head>
+
+<body class="BodyCss">
+    <img class="bodyimg" id="songpic" src="pic/1.jpg">
+    <script src="js/Song.js" inline></script>
+    <!-- build:js js/all.js -->
+    <script src="js/Lastsong.js"></script>
+    <script src="js/Nextsong.js"></script>
+    <!-- endbuild -->
+
+    <div id="songtext" class="SongtextCss">
+        大鱼-周深
+    </div>
+
+
+    <div class="PlayerCss">
+        <audio id="player" src="mp3/1.mp3" controls="controls" autoplay="autoplay" onended=NextSong()>
+            Your browser does not support the audio tag.
+            </audio>
+    </div>
+
+    <div class="LastsongCss" onclick="LastSong()">
+        <img class="lastimg" src="pic/lastsong.png">
+    </div>
+
+    <div class="NextsongCss" onclick="NextSong()">
+        <img class="nextimg" src="pic/nextsong.png">
+    </div>
+
+
+
+
+
+</body>
+
+</html>
